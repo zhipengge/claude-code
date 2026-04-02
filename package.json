@@ -1,0 +1,32 @@
+{
+  "name": "claude-code-sourcemap",
+  "version": "2.1.88",
+  "description": "Claude Code 源码还原研究版 - 从 npm 包 source map 还原的 TypeScript 源码",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node package/cli.js",
+    "start:version": "node package/cli.js --version",
+    "typecheck": "cd restored-src && tsc --noEmit",
+    "security-check": "bash scripts/security-check.sh",
+    "help": "node package/cli.js --help"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "claude",
+    "anthropic",
+    "ai",
+    "agent",
+    "mcp",
+    "sourcemap",
+    "research"
+  ],
+  "license": "SEE LICENSE IN package/LICENSE.md",
+  "repository": {
+    "type": "git"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
